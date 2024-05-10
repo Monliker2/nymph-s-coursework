@@ -1,5 +1,6 @@
 
 #pragma once
+#include "FormForArtist.h"
 
 //#define XML_UNICODE
 
@@ -229,7 +230,8 @@ private: System::Void dataGridView1_Click(System::Object^ sender, System::EventA
 
 	if (cellValue != nullptr && cellValue != "") {
 		Object^ cellValue1 = dataGridView1->Rows[dataGridView1->CurrentCell->RowIndex]->Cells[0]->Value;
-		MessageBox::Show(cellValue1->ToString());
+		FormForArtist^ a = gcnew FormForArtist(cellValue1->ToString());
+		a->Show();
 	}
 
 }

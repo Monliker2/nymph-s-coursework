@@ -1,5 +1,6 @@
-﻿  page1.cpp
+﻿  FormForArtist.cpp
+  page1.cpp
   painting.cpp
   Создание кода...
-  ForXml.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  FormForArtist.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
   mart.vcxproj -> A:\Downloads\mart\x64\Debug\mart.exe
