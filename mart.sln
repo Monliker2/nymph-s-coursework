@@ -6,11 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mart", "mart.vcxproj", "{3F96E280-CF28-4F4F-ABC3-5F5C0AB9D02D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{D9973B5D-3552-4B02-8FE8-57B46DC06C45}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\Downloads\xlsxio-0.2.35-binary-win64\include\xlsxio_read.h = ..\..\..\Downloads\xlsxio-0.2.35-binary-win64\include\xlsxio_read.h
-		..\..\..\Downloads\xlsxio-0.2.35-binary-win64\include\xlsxio_version.h = ..\..\..\Downloads\xlsxio-0.2.35-binary-win64\include\xlsxio_version.h
-		..\..\..\Downloads\xlsxio-0.2.35-binary-win64\include\xlsxio_write.h = ..\..\..\Downloads\xlsxio-0.2.35-binary-win64\include\xlsxio_write.h
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

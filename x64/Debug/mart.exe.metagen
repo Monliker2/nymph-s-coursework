@@ -1,4 +1,4 @@
-  mart.FormForArtist.resources - Embedded, ContainedInManifestFile, 
+  mart.FormForArtist1.resources - Embedded, ContainedInManifestFile, 
   mart.page1.resources - Embedded, ContainedInManifestFile, 
   mart.painting.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
@@ -16,9 +16,9 @@ Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=
 	hash=None, flags=None
 Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
-Class mart.FormForArtist: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+Class mart.FormForArtist1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
-    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class mart.painting: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

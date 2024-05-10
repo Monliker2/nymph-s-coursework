@@ -24,7 +24,7 @@
     <ClCompile Include="ForXml.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="FormForArtist.cpp">
+    <ClCompile Include="FormForArtist1.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
@@ -38,7 +38,7 @@
     <ClInclude Include="ForXml.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="FormForArtist.h">
+    <ClInclude Include="FormForArtist1.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
@@ -47,10 +47,5 @@
   </ItemGroup>
   <ItemGroup>
     <Xml Include="Art.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="FormForArtist.resx">
-      <Filter>Файлы заголовков</Filter>
-    </EmbeddedResource>
   </ItemGroup>
 </Project>

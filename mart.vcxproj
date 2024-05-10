@@ -121,13 +121,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="FormForArtist.cpp" />
+    <ClCompile Include="FormForArtist1.cpp" />
     <ClCompile Include="ForXml.cpp" />
     <ClCompile Include="page1.cpp" />
     <ClCompile Include="painting.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FormForArtist.h" />
+    <ClInclude Include="FormForArtist1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="ForXml.h" />
     <ClInclude Include="page1.h">
       <FileType>CppForm</FileType>
@@ -137,7 +139,9 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FormForArtist.resx" />
+    <EmbeddedResource Include="FormForArtist1.resx">
+      <DependentUpon>FormForArtist1.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="page1.resx">
       <DependentUpon>page1.h</DependentUpon>
     </EmbeddedResource>

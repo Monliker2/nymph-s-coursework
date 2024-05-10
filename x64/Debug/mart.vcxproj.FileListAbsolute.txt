@@ -1,7 +1,7 @@
+A:\Downloads\mart\x64\Debug\mart.exe
 A:\Downloads\mart\x64\Debug\mart.vcxproj.AssemblyReference.cache
 A:\Downloads\mart\x64\Debug\mart.vcxproj.SuggestedBindingRedirects.cache
+A:\Downloads\mart\x64\Debug\mart.FormForArtist1.resources
 A:\Downloads\mart\x64\Debug\mart.page1.resources
 A:\Downloads\mart\x64\Debug\mart.painting.resources
 A:\Downloads\mart\x64\Debug\mart.vcxproj.GenerateResource.cache
-A:\Downloads\mart\x64\Debug\mart.exe
-A:\Downloads\mart\x64\Debug\mart.FormForArtist.resources

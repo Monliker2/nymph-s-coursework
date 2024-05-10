@@ -1,6 +1,6 @@
 
 #pragma once
-#include "FormForArtist.h"
+#include "FormForArtist1.h"
 
 //#define XML_UNICODE
 
@@ -14,37 +14,6 @@ namespace mart {
 	using namespace System::Drawing;
 	using namespace System::Collections::Generic;
 	using namespace System::Xml;
-
-	//List<String^>^ ImportColumnFromXLSX(std::string filename, int columnIndex) {
-	//	List<String^>^ columnData = gcnew List<String^>();
-
-	//	xlsxioreader reader = xlsxioread_open(filename.c_str());
-	//	if (reader == NULL) {
-	//		std::cerr << "Failed to open XLSX file" << std::endl;
-	//		return columnData;
-	//	}
-
-	//	xlsxioreadersheet sheet = xlsxioread_sheet_open(reader, NULL, XLSXIOREAD_SKIP_EMPTY_ROWS);
-	//	if (sheet == NULL) {
-	//		std::cerr << "Failed to open XLSX sheet" << std::endl;
-	//		xlsxioread_close(reader);
-	//		return columnData;
-	//	}
-
-	//	while (xlsxioread_sheet_next_row(sheet)) {
-	//		xlsxioread_sheet_next_cell(sheet);
-	//		const char* cell_value = xlsxioread_sheet_read_str(sheet, NULL, NULL);
-	//		if (cell_value != NULL) {
-	//			columnData->Add(gcnew String(cell_value));
-	//		}
-	//	}
-
-	//	xlsxioread_sheet_close(sheet);
-	//	xlsxioread_close(reader);
-
-	//	return columnData;
-	//}
-
 	/// <summary>
 	/// Сводка для painting
 	/// </summary>
@@ -52,9 +21,10 @@ namespace mart {
 	{
 	
 	public:
-		painting(String^ typeOfArtist)
+		painting(String^ typeOfArtist/*, String^ path*/)
 		{
 			TypeOfArtist = typeOfArtist;
+			/*Path = path;*/
 			InitializeComponent();
 			//LoadData();
 			//
@@ -74,6 +44,7 @@ namespace mart {
 			}
 		}
 	private: String^ TypeOfArtist;
+	/*private: String^ Path;*/
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::DataGridView^ dataGridView1;
@@ -157,14 +128,6 @@ namespace mart {
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->Close();
 	}
-		   //void LoadData() {
-			  // std::string filename = "C:\\Users\\Arina\\OneDrive\\Рабочий стол\\живопись.xlsx"; // Замените на путь к вашему файлу
-			  // List<String^>^ columnData = ImportColumnFromXLSX(filename, 0); // Импортировать первый столбец
-
-			  // for each (String ^ item in columnData) {
-				 //  listBox1->Items->Add(item); // Добавить элементы в ListBox
-			  // }
-		   //}
 	private: DataTable^ Table;
 	private: System::Void painting_Load(System::Object^ sender, System::EventArgs^ e) {
 		dataGridView1->SelectionMode = DataGridViewSelectionMode::FullRowSelect;
@@ -215,6 +178,7 @@ namespace mart {
 		}
 		dataGridView1->ReadOnly = true;
 		dataGridView1->Columns[1]->Visible = false;
+		dataGridView1->Columns[2]->Visible = false;
 
 		dataGridView1->ClearSelection();
 		/*isSelect = false;
@@ -230,7 +194,7 @@ private: System::Void dataGridView1_Click(System::Object^ sender, System::EventA
 
 	if (cellValue != nullptr && cellValue != "") {
 		Object^ cellValue1 = dataGridView1->Rows[dataGridView1->CurrentCell->RowIndex]->Cells[0]->Value;
-		FormForArtist^ a = gcnew FormForArtist(cellValue1->ToString());
+		FormForArtist1^ a = gcnew FormForArtist1(cellValue1->ToString(), TypeOfArtist, "Art.xml");
 		a->Show();
 	}
 

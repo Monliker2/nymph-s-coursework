@@ -76,16 +76,18 @@ namespace mart {
 			// 
 			// button1
 			// 
+			this->button1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
 			this->button1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(226)), static_cast<System::Int32>(static_cast<System::Byte>(218)),
 				static_cast<System::Int32>(static_cast<System::Byte>(202)));
 			this->button1->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->button1->Font = (gcnew System::Drawing::Font(L"Unbounded", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(62)), static_cast<System::Int32>(static_cast<System::Byte>(80)),
 				static_cast<System::Int32>(static_cast<System::Byte>(99)));
-			this->button1->Location = System::Drawing::Point(669, 436);
+			this->button1->Location = System::Drawing::Point(502, 354);
+			this->button1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(245, 55);
+			this->button1->Size = System::Drawing::Size(184, 45);
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"ÔÎÒÎÃÐÀÔÈß";
 			this->button1->UseVisualStyleBackColor = false;
@@ -96,13 +98,14 @@ namespace mart {
 			this->button2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(226)), static_cast<System::Int32>(static_cast<System::Byte>(218)),
 				static_cast<System::Int32>(static_cast<System::Byte>(202)));
 			this->button2->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->button2->Font = (gcnew System::Drawing::Font(L"Unbounded", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button2->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(62)), static_cast<System::Int32>(static_cast<System::Byte>(80)),
 				static_cast<System::Int32>(static_cast<System::Byte>(99)));
-			this->button2->Location = System::Drawing::Point(958, 537);
+			this->button2->Location = System::Drawing::Point(718, 436);
+			this->button2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(245, 55);
+			this->button2->Size = System::Drawing::Size(184, 45);
 			this->button2->TabIndex = 1;
 			this->button2->Text = L"ÑÊÓËÜÏÒÓÐÀ";
 			this->button2->UseVisualStyleBackColor = false;
@@ -113,13 +116,14 @@ namespace mart {
 			this->button3->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(226)), static_cast<System::Int32>(static_cast<System::Byte>(218)),
 				static_cast<System::Int32>(static_cast<System::Byte>(202)));
 			this->button3->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->button3->Font = (gcnew System::Drawing::Font(L"Unbounded", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button3->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(62)), static_cast<System::Int32>(static_cast<System::Byte>(80)),
 				static_cast<System::Int32>(static_cast<System::Byte>(99)));
-			this->button3->Location = System::Drawing::Point(669, 537);
+			this->button3->Location = System::Drawing::Point(502, 436);
+			this->button3->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(245, 55);
+			this->button3->Size = System::Drawing::Size(184, 45);
 			this->button3->TabIndex = 2;
 			this->button3->Text = L"ÆÈÂÎÏÈÑÜ";
 			this->button3->UseVisualStyleBackColor = false;
@@ -131,13 +135,14 @@ namespace mart {
 			this->button4->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(226)), static_cast<System::Int32>(static_cast<System::Byte>(218)),
 				static_cast<System::Int32>(static_cast<System::Byte>(202)));
 			this->button4->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->button4->Font = (gcnew System::Drawing::Font(L"Unbounded", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button4->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(62)), static_cast<System::Int32>(static_cast<System::Byte>(80)),
 				static_cast<System::Int32>(static_cast<System::Byte>(99)));
-			this->button4->Location = System::Drawing::Point(958, 436);
+			this->button4->Location = System::Drawing::Point(718, 354);
+			this->button4->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(245, 55);
+			this->button4->Size = System::Drawing::Size(184, 45);
 			this->button4->TabIndex = 3;
 			this->button4->Text = L"ÑÒÐÈÒ-ÀÐÒ";
 			this->button4->UseVisualStyleBackColor = false;
@@ -149,11 +154,12 @@ namespace mart {
 			this->label2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(226)), static_cast<System::Int32>(static_cast<System::Byte>(218)),
 				static_cast<System::Int32>(static_cast<System::Byte>(202)));
 			this->label2->Cursor = System::Windows::Forms::Cursors::Default;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Unbounded Light", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label2->Location = System::Drawing::Point(172, 275);
+			this->label2->Location = System::Drawing::Point(129, 223);
+			this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(354, 252);
+			this->label2->Size = System::Drawing::Size(223, 162);
 			this->label2->TabIndex = 5;
 			this->label2->Text = resources->GetString(L"label2.Text");
 			this->label2->TextAlign = System::Drawing::ContentAlignment::TopCenter;
@@ -163,12 +169,13 @@ namespace mart {
 			this->label3->AutoSize = true;
 			this->label3->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(229)), static_cast<System::Int32>(static_cast<System::Byte>(111)),
 				static_cast<System::Int32>(static_cast<System::Byte>(56)));
-			this->label3->Font = (gcnew System::Drawing::Font(L"Unbounded", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label3->ForeColor = System::Drawing::Color::White;
-			this->label3->Location = System::Drawing::Point(748, 321);
+			this->label3->Location = System::Drawing::Point(561, 261);
+			this->label3->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(383, 72);
+			this->label3->Size = System::Drawing::Size(243, 48);
 			this->label3->TabIndex = 6;
 			this->label3->Text = L"Âûáåðèòå èíòåðåñóþùèé \r\nâèä èñêóññòâà";
 			this->label3->TextAlign = System::Drawing::ContentAlignment::TopCenter;
@@ -181,8 +188,9 @@ namespace mart {
 			this->pictureBox1->BackColor = System::Drawing::Color::Transparent;
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
 			this->pictureBox1->Location = System::Drawing::Point(0, -1);
+			this->pictureBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(1266, 675);
+			this->pictureBox1->Size = System::Drawing::Size(950, 548);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox1->TabIndex = 7;
 			this->pictureBox1->TabStop = false;
@@ -192,13 +200,14 @@ namespace mart {
 			this->label1->AutoSize = true;
 			this->label1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(226)), static_cast<System::Int32>(static_cast<System::Byte>(218)),
 				static_cast<System::Int32>(static_cast<System::Byte>(202)));
-			this->label1->Font = (gcnew System::Drawing::Font(L"Unbounded", 36, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 36, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(62)), static_cast<System::Int32>(static_cast<System::Byte>(80)),
 				static_cast<System::Int32>(static_cast<System::Byte>(99)));
-			this->label1->Location = System::Drawing::Point(12, 27);
+			this->label1->Location = System::Drawing::Point(9, 22);
+			this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(1046, 93);
+			this->label1->Size = System::Drawing::Size(688, 55);
 			this->label1->TabIndex = 8;
 			this->label1->Text = L"ÑÎÂÐÅÌÅÍÍÛÅ ÄÅßÒÅËÈ \r\n";
 			// 
@@ -206,23 +215,24 @@ namespace mart {
 			// 
 			this->label4->AutoSize = true;
 			this->label4->BackColor = System::Drawing::Color::Transparent;
-			this->label4->Font = (gcnew System::Drawing::Font(L"Kudry Weird Headline", 48, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 48, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label4->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(62)), static_cast<System::Int32>(static_cast<System::Byte>(80)),
 				static_cast<System::Int32>(static_cast<System::Byte>(99)));
-			this->label4->Location = System::Drawing::Point(202, 109);
+			this->label4->Location = System::Drawing::Point(152, 89);
+			this->label4->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(540, 117);
+			this->label4->Size = System::Drawing::Size(425, 73);
 			this->label4->TabIndex = 9;
 			this->label4->Text = L"ÈÑÊÓÑÑÒÂÀ";
 			// 
 			// page1
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(226)), static_cast<System::Int32>(static_cast<System::Byte>(218)),
 				static_cast<System::Int32>(static_cast<System::Byte>(202)));
-			this->ClientSize = System::Drawing::Size(1262, 673);
+			this->ClientSize = System::Drawing::Size(946, 547);
 			this->Controls->Add(this->label4);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
@@ -232,6 +242,7 @@ namespace mart {
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->pictureBox1);
+			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->Name = L"page1";
 			this->Text = L"Íà÷àëüíîå îêíî";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();

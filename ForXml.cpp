@@ -2,44 +2,44 @@
 
 
 
-void ExtractNodeNames(XmlNode^ node, List<String^>^ nodeNames) {
-    for each (XmlNode ^ child in node->ChildNodes) {
-        if (child->NodeType == XmlNodeType::Element) {
-            nodeNames->Add(child->Name);
-        }
-    }
-}
-
-List<String^>^ GetNodeNames(String^ filePath) {
-    List<String^>^ nodeNames = gcnew List<String^>();
-
-    XmlDocument^ doc = gcnew XmlDocument();
-    try {
-        doc->Load(filePath);
-
-        XmlNode^ root = doc->DocumentElement;
-        ExtractNodeNames(root, nodeNames);
-    }
-    catch (Exception^ e) {
-        Console::WriteLine("Error loading XML file: " + e->Message);
-    }
-    return nodeNames;
-}
-
-
-bool IsExist(String^ nodeName) {
-    XmlDocument^ doc = gcnew XmlDocument();
-    doc->Load("table.xml");
-
-    DataSet^ Set = gcnew DataSet();
-    Set->ReadXml("table.xml");
-    if (doc->SelectSingleNode("/Tasks/" + nodeName) != nullptr) {
-        return true;
-    }
-    else {
-        return false;
-    }
-}
+//void ExtractNodeNames(XmlNode^ node, List<String^>^ nodeNames) {
+//    for each (XmlNode ^ child in node->ChildNodes) {
+//        if (child->NodeType == XmlNodeType::Element) {
+//            nodeNames->Add(child->Name);
+//        }
+//    }
+//}
+//
+//List<String^>^ GetNodeNames(String^ filePath) {
+//    List<String^>^ nodeNames = gcnew List<String^>();
+//
+//    XmlDocument^ doc = gcnew XmlDocument();
+//    try {
+//        doc->Load(filePath);
+//
+//        XmlNode^ root = doc->DocumentElement;
+//        ExtractNodeNames(root, nodeNames);
+//    }
+//    catch (Exception^ e) {
+//        Console::WriteLine("Error loading XML file: " + e->Message);
+//    }
+//    return nodeNames;
+//}
+//
+//
+//bool IsExist(String^ nodeName) {
+//    XmlDocument^ doc = gcnew XmlDocument();
+//    doc->Load("table.xml");
+//
+//    DataSet^ Set = gcnew DataSet();
+//    Set->ReadXml("table.xml");
+//    if (doc->SelectSingleNode("/Tasks/" + nodeName) != nullptr) {
+//        return true;
+//    }
+//    else {
+//        return false;
+//    }
+//}
 
 //SortedSet<String^>^ GetDates(List<String^>^ nodeNames) {
 //    SortedSet<String^>^ dates = gcnew SortedSet<String^>();
@@ -53,21 +53,29 @@ bool IsExist(String^ nodeName) {
 //    return dates;
 //}
 
-//void RemoveNodeByID(String^ nodeName, String^ attributeValue) {
-//    XmlDocument^ doc = gcnew XmlDocument();
-//    doc->Load("table.xml");
-//
-//    String^ path = String::Format("//{0}[@{1}='{2}']", ("Tasks/" + nodeName), "id", attributeValue);
-//
-//    XmlNode^ nodeToRemove = doc->SelectSingleNode(path);
-//
-//    if (nodeToRemove != nullptr) {
-//        nodeToRemove->ParentNode->RemoveChild(nodeToRemove);
-//
-//        doc->Save("table.xml");
-//    }
-//
-//}
+String^ GetDiscriptionByAttribute(String^ nodeName, String^ attributeValue, String^ Path) {
+    XmlDocument^ doc = gcnew XmlDocument();
+    doc->Load(Path);
+
+    String^ path = String::Format("//{0}[@{1}='{2}']", ("Art/" + nodeName), "Èìÿ", attributeValue);
+
+    String^ node = doc->SelectSingleNode(path)->InnerText->ToString();
+    return node;
+}
+
+String^ GetImageByAttribute(String^ nodeName, String^ attributeValue, String^ Path) {
+    XmlDocument^ doc = gcnew XmlDocument();
+    doc->Load(Path);
+
+    String^ path = String::Format("//{0}[@{1}='{2}']", ("Art/" + nodeName), "Èìÿ", attributeValue);
+
+    XmlAttributeCollection^ attributes = doc->SelectSingleNode(path)->Attributes;
+    for each (XmlAttribute ^ attribute in attributes) {
+        if (attribute->Name->ToString() == "pic") {
+            return attribute->Value;
+        }
+    }  
+}
 //
 //void AddNode(String^ nodeName, String^ name, String^ description, String^ priority) {
 //

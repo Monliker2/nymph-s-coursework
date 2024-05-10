@@ -15,7 +15,9 @@ bool IsExist(String^ nodeName);
 
 SortedSet<String^>^ GetDates(List<String^>^ filePath);
 
-void RemoveNodeByID(String^ nodeName, String^ attributeValue);
+String^ GetDiscriptionByAttribute(String^ nodeName, String^ attributeValue, String^ Path);
+
+String^ GetImageByAttribute(String^ nodeName, String^ attributeValue, String^ Path);
 
 void AddNode(String^ nodeName, String^ name, String^ description, String^ priority);
 

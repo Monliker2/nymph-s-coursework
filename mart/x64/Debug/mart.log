@@ -1,5 +1,12 @@
-﻿  page1.cpp
+﻿  FormForArtist1.cpp
+  ForXml.cpp
+  page1.cpp
   painting.cpp
+C:\Users\Arina\source\repos\mart\painting.h(194,43): error C3673: mart::FormForArtist1: у класса нет конструктора копии
+  (компиляция исходного файла "page1.cpp")
+  
+C:\Users\Arina\source\repos\mart\painting.h(194,43): error C3673: mart::FormForArtist1: у класса нет конструктора копии
+  (компиляция исходного файла "painting.cpp")
+  
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
   Создание кода...
-  page1.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
-  mart.vcxproj -> C:\Users\Arina\source\repos\mart\x64\Debug\mart.exe
