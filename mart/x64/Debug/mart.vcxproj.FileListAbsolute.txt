@@ -1,0 +1,7 @@
+C:\Users\Arina\source\repos\mart\mart\x64\Debug\mart.vcxproj.AssemblyReference.cache
+C:\Users\Arina\source\repos\mart\mart\x64\Debug\mart.page1.resources
+C:\Users\Arina\source\repos\mart\mart\x64\Debug\mart.painting.resources
+C:\Users\Arina\source\repos\mart\mart\x64\Debug\mart.photo1.resources
+C:\Users\Arina\source\repos\mart\mart\x64\Debug\mart.sculpture.resources
+C:\Users\Arina\source\repos\mart\mart\x64\Debug\mart.streetart.resources
+C:\Users\Arina\source\repos\mart\mart\x64\Debug\mart.vcxproj.GenerateResource.cache
