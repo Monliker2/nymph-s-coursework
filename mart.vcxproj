@@ -121,26 +121,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ForXml.cpp" />
     <ClCompile Include="page1.cpp" />
     <ClCompile Include="painting.cpp" />
-    <ClCompile Include="photo1.cpp" />
-    <ClCompile Include="sculpture.cpp" />
-    <ClCompile Include="streetart.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ForXml.h" />
     <ClInclude Include="page1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="painting.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="photo1.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="sculpture.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="streetart.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
@@ -151,18 +141,12 @@
     <EmbeddedResource Include="painting.resx">
       <DependentUpon>painting.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="photo1.resx">
-      <DependentUpon>photo1.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="sculpture.resx">
-      <DependentUpon>sculpture.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="streetart.resx">
-      <DependentUpon>streetart.h</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Art.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

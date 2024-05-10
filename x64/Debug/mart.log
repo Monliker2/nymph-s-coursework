@@ -1,9 +1,5 @@
 ﻿  page1.cpp
   painting.cpp
-  photo1.cpp
-  sculpture.cpp
-  streetart.cpp
-  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
   Создание кода...
-  page1.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  ForXml.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
   mart.vcxproj -> A:\Downloads\mart\x64\Debug\mart.exe

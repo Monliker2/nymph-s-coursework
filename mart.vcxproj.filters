@@ -15,40 +15,31 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="sculpture.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="painting.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="streetart.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="page1.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="photo1.cpp">
+    <ClCompile Include="ForXml.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="sculpture.h">
-      <Filter>Исходные файлы</Filter>
-    </ClInclude>
     <ClInclude Include="painting.h">
-      <Filter>Исходные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="streetart.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
     <ClInclude Include="page1.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
-    <ClInclude Include="photo1.h">
-      <Filter>Исходные файлы</Filter>
+    <ClInclude Include="ForXml.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Art.xml" />
   </ItemGroup>
 </Project>

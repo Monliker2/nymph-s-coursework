@@ -1,7 +1,4 @@
-#include "photo1.h"
 #include "painting.h"
-#include "sculpture.h"
-#include "streetart.h"
 #pragma once
 
 namespace mart {
@@ -244,19 +241,25 @@ namespace mart {
 		}
 #pragma endregion
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-		photo1^ About = gcnew photo1;
+		/*photo1^ About = gcnew photo1;
+		About->Show();*/
+		painting^ About = gcnew painting("Photographe");
 		About->Show();
 	}
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-		sculpture^ About = gcnew sculpture;
+		//sculpture^ About = gcnew sculpture;
+		//About->Show();
+		painting^ About = gcnew painting("Sculptor");
 		About->Show();
 	}
 	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
-		painting^ About = gcnew painting;
+		painting^ About = gcnew painting("Artist");
 		About->Show();
 }
 	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
-		streetart^ About = gcnew streetart;
+		//streetart^ About = gcnew streetart;
+		//About->Show();
+		painting^ About = gcnew painting("Street");
 		About->Show();
 }
 };
