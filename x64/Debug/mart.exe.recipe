@@ -4,6 +4,9 @@
     <ProjectOutput>
       <FullPath>A:\Downloads\mart\x64\Debug\mart.exe</FullPath>
     </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>A:\Downloads\mart\x64\Debug\mart.exe.config</FullPath>
+    </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
   <SatelliteDlls />

@@ -1,14 +1,18 @@
 #include "painting.h"
+#using <System.dll>
+#using <System.Configuration.dll>
+
 #pragma once
 
 namespace mart {
-
+	
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace System::Configuration;
 
 	/// <summary>
 	/// Сводка для page1
@@ -281,12 +285,16 @@ namespace mart {
 			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"page1";
 			this->Text = L"Начальное окно";
+			this->Load += gcnew System::EventHandler(this, &page1::page1_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
 		}
 	private: String^ Path;
+
+
+
 #pragma endregion
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		/*photo1^ About = gcnew photo1;
@@ -310,10 +318,33 @@ namespace mart {
 		painting^ About = gcnew painting("Street", Path);
 		About->Show();
 }
+		   bool IsSettingsSet() {
+			   auto appSettings = ConfigurationManager::AppSettings;
+			   return (appSettings[L"Path"] != nullptr);
+		   }
 private: System::Void PathButton_Click(System::Object^ sender, System::EventArgs^ e) {
 	folderBrowserDialog1->ShowDialog();
 
 	Path = folderBrowserDialog1->SelectedPath;
+	PathLabel->Text = Path;
+	
+	System::Configuration::Configuration^  configFile = ConfigurationManager::OpenExeConfiguration(ConfigurationUserLevel::None);
+	auto settings = configFile->AppSettings->Settings;
+	if (IsSettingsSet()) 
+		settings[L"Path"]->Value = Path;
+	else
+		settings->Add(L"Path", Path);
+
+	configFile->Save(ConfigurationSaveMode::Modified);
+	ConfigurationManager::RefreshSection(configFile->AppSettings->SectionInformation->Name);
+}
+
+private: System::Void page1_Load(System::Object^ sender, System::EventArgs^ e) {
+	System::Configuration::Configuration^  configFile = ConfigurationManager::OpenExeConfiguration(ConfigurationUserLevel::None);
+	auto appSettings = ConfigurationManager::AppSettings;
+	if (IsSettingsSet()) {
+		Path = appSettings[L"Path"]->ToString();
+	}
 	PathLabel->Text = Path;
 }
 };
