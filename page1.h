@@ -46,6 +46,9 @@ namespace mart {
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::Label^ label4;
+	private: System::Windows::Forms::FolderBrowserDialog^ folderBrowserDialog1;
+	private: System::Windows::Forms::Label^ PathLabel;
+	private: System::Windows::Forms::Button^ PathButton;
 
 
 	private:
@@ -71,6 +74,9 @@ namespace mart {
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->folderBrowserDialog1 = (gcnew System::Windows::Forms::FolderBrowserDialog());
+			this->PathLabel = (gcnew System::Windows::Forms::Label());
+			this->PathButton = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -85,7 +91,7 @@ namespace mart {
 			this->button1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(62)), static_cast<System::Int32>(static_cast<System::Byte>(80)),
 				static_cast<System::Int32>(static_cast<System::Byte>(99)));
 			this->button1->Location = System::Drawing::Point(502, 354);
-			this->button1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->button1->Margin = System::Windows::Forms::Padding(2);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(184, 45);
 			this->button1->TabIndex = 0;
@@ -103,7 +109,7 @@ namespace mart {
 			this->button2->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(62)), static_cast<System::Int32>(static_cast<System::Byte>(80)),
 				static_cast<System::Int32>(static_cast<System::Byte>(99)));
 			this->button2->Location = System::Drawing::Point(718, 436);
-			this->button2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->button2->Margin = System::Windows::Forms::Padding(2);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(184, 45);
 			this->button2->TabIndex = 1;
@@ -121,7 +127,7 @@ namespace mart {
 			this->button3->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(62)), static_cast<System::Int32>(static_cast<System::Byte>(80)),
 				static_cast<System::Int32>(static_cast<System::Byte>(99)));
 			this->button3->Location = System::Drawing::Point(502, 436);
-			this->button3->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->button3->Margin = System::Windows::Forms::Padding(2);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(184, 45);
 			this->button3->TabIndex = 2;
@@ -140,7 +146,7 @@ namespace mart {
 			this->button4->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(62)), static_cast<System::Int32>(static_cast<System::Byte>(80)),
 				static_cast<System::Int32>(static_cast<System::Byte>(99)));
 			this->button4->Location = System::Drawing::Point(718, 354);
-			this->button4->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->button4->Margin = System::Windows::Forms::Padding(2);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(184, 45);
 			this->button4->TabIndex = 3;
@@ -188,7 +194,7 @@ namespace mart {
 			this->pictureBox1->BackColor = System::Drawing::Color::Transparent;
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
 			this->pictureBox1->Location = System::Drawing::Point(0, -1);
-			this->pictureBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->pictureBox1->Margin = System::Windows::Forms::Padding(2);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(950, 548);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -226,6 +232,34 @@ namespace mart {
 			this->label4->TabIndex = 9;
 			this->label4->Text = L"ÈÑÊÓÑÑÒÂÀ";
 			// 
+			// PathLabel
+			// 
+			this->PathLabel->AutoSize = true;
+			this->PathLabel->Location = System::Drawing::Point(786, 64);
+			this->PathLabel->Name = L"PathLabel";
+			this->PathLabel->Size = System::Drawing::Size(35, 13);
+			this->PathLabel->TabIndex = 10;
+			this->PathLabel->Text = L"label5";
+			// 
+			// PathButton
+			// 
+			this->PathButton->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
+			this->PathButton->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(226)), static_cast<System::Int32>(static_cast<System::Byte>(218)),
+				static_cast<System::Int32>(static_cast<System::Byte>(202)));
+			this->PathButton->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->PathButton->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->PathButton->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(62)), static_cast<System::Int32>(static_cast<System::Byte>(80)),
+				static_cast<System::Int32>(static_cast<System::Byte>(99)));
+			this->PathButton->Location = System::Drawing::Point(718, 89);
+			this->PathButton->Margin = System::Windows::Forms::Padding(2);
+			this->PathButton->Name = L"PathButton";
+			this->PathButton->Size = System::Drawing::Size(166, 43);
+			this->PathButton->TabIndex = 11;
+			this->PathButton->Text = L"ÔÎÒÎÃÐÀÔÈß";
+			this->PathButton->UseVisualStyleBackColor = false;
+			this->PathButton->Click += gcnew System::EventHandler(this, &page1::PathButton_Click);
+			// 
 			// page1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -233,6 +267,8 @@ namespace mart {
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(226)), static_cast<System::Int32>(static_cast<System::Byte>(218)),
 				static_cast<System::Int32>(static_cast<System::Byte>(202)));
 			this->ClientSize = System::Drawing::Size(946, 547);
+			this->Controls->Add(this->PathButton);
+			this->Controls->Add(this->PathLabel);
 			this->Controls->Add(this->label4);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
@@ -242,7 +278,7 @@ namespace mart {
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->pictureBox1);
-			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"page1";
 			this->Text = L"Íà÷àëüíîå îêíî";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
@@ -250,28 +286,35 @@ namespace mart {
 			this->PerformLayout();
 
 		}
+	private: String^ Path;
 #pragma endregion
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		/*photo1^ About = gcnew photo1;
 		About->Show();*/
-		painting^ About = gcnew painting("Photographe");
+		painting^ About = gcnew painting("Photographe", Path);
 		About->Show();
 	}
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 		//sculpture^ About = gcnew sculpture;
 		//About->Show();
-		painting^ About = gcnew painting("Sculptor");
+		painting^ About = gcnew painting("Sculptor", Path);
 		About->Show();
 	}
 	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
-		painting^ About = gcnew painting("Artist");
+		painting^ About = gcnew painting("Artist", Path);
 		About->Show();
 }
 	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
 		//streetart^ About = gcnew streetart;
 		//About->Show();
-		painting^ About = gcnew painting("Street");
+		painting^ About = gcnew painting("Street", Path);
 		About->Show();
+}
+private: System::Void PathButton_Click(System::Object^ sender, System::EventArgs^ e) {
+	folderBrowserDialog1->ShowDialog();
+
+	Path = folderBrowserDialog1->SelectedPath;
+	PathLabel->Text = Path;
 }
 };
 }

@@ -21,10 +21,10 @@ namespace mart {
 	{
 	
 	public:
-		painting(String^ typeOfArtist/*, String^ path*/)
+		painting(String^ typeOfArtist, String^ path)
 		{
 			TypeOfArtist = typeOfArtist;
-			/*Path = path;*/
+			Path = path;
 			InitializeComponent();
 			//LoadData();
 			//
@@ -44,7 +44,7 @@ namespace mart {
 			}
 		}
 	private: String^ TypeOfArtist;
-	/*private: String^ Path;*/
+	private: String^ Path;
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::DataGridView^ dataGridView1;
@@ -131,13 +131,13 @@ namespace mart {
 	private: DataTable^ Table;
 	private: System::Void painting_Load(System::Object^ sender, System::EventArgs^ e) {
 		dataGridView1->SelectionMode = DataGridViewSelectionMode::FullRowSelect;
-		String^ Path = "Art.xml";
+		String^ PathOfFile = Path + "\\Art.xml";
 		/*isSelect = false;
 		ChangeButton->Enabled = false;
 		DeleteButton->Enabled = false;*/
 		Table = gcnew DataTable();
 		
-		if (IO::File::Exists(Path) == false) {
+		if (IO::File::Exists(PathOfFile) == false) {
 			//XmlDocument^ doc = gcnew XmlDocument();
 			//XmlDeclaration^ declaration = doc->CreateXmlDeclaration("1.0", "utf-8", nullptr);
 			//doc->AppendChild(declaration);
@@ -163,8 +163,8 @@ namespace mart {
 		else {
 			DataSet^ Set = gcnew DataSet();
 			XmlDocument^ doc = gcnew XmlDocument();
-			doc->Load(Path);
-			Set->ReadXml(Path);
+			doc->Load(PathOfFile);
+			Set->ReadXml(PathOfFile);
 			String^ StringXML = Set->GetXml();
 			
 			if (TypeOfArtist == "Artist") dataGridView1->DataMember = ("Artist");
@@ -194,7 +194,7 @@ private: System::Void dataGridView1_Click(System::Object^ sender, System::EventA
 
 	if (cellValue != nullptr && cellValue != "") {
 		Object^ cellValue1 = dataGridView1->Rows[dataGridView1->CurrentCell->RowIndex]->Cells[0]->Value;
-		FormForArtist1^ a = gcnew FormForArtist1(cellValue1->ToString(), TypeOfArtist, "Art.xml");
+		FormForArtist1^ a = gcnew FormForArtist1(cellValue1->ToString(), TypeOfArtist, Path);
 		a->Show();
 	}
 

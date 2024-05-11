@@ -112,10 +112,10 @@ namespace mart {
 		}
 #pragma endregion
 	private: System::Void FormForArtist1_Load(System::Object^ sender, System::EventArgs^ e) {
-		DiscriptionLabel->Text = GetDiscriptionByAttribute(TypeOfArtist, NameOfArtist, Path);
+		DiscriptionLabel->Text = GetDiscriptionByAttribute(TypeOfArtist, NameOfArtist, Path + "\\Art.xml");
 		NameLabel->Text = NameOfArtist;
 
-		pictureBox1->Image = Image::FromFile(GetImageByAttribute(TypeOfArtist, NameOfArtist, Path));
+		pictureBox1->Image = Image::FromFile(GetImageByAttribute(TypeOfArtist, NameOfArtist, Path + "\\Art.xml"));
 	}
 	};
 }

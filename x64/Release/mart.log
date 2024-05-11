@@ -1,0 +1,9 @@
+﻿  FormForArtist1.cpp
+  ForXml.cpp
+  page1.cpp
+  painting.cpp
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  Создание кода...
+A:\Downloads\mart\ForXml.cpp(78): warning C4715: GetImageByAttribute: значение возвращается не при всех путях выполнения
+  FormForArtist1.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  mart.vcxproj -> A:\Downloads\mart\x64\Release\mart.exe

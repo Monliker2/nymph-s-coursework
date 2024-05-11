@@ -1,0 +1,7 @@
+A:\Downloads\mart\x64\Release\mart.vcxproj.AssemblyReference.cache
+A:\Downloads\mart\x64\Release\mart.vcxproj.SuggestedBindingRedirects.cache
+A:\Downloads\mart\x64\Release\mart.FormForArtist1.resources
+A:\Downloads\mart\x64\Release\mart.page1.resources
+A:\Downloads\mart\x64\Release\mart.painting.resources
+A:\Downloads\mart\x64\Release\mart.vcxproj.GenerateResource.cache
+A:\Downloads\mart\x64\Release\mart.exe
